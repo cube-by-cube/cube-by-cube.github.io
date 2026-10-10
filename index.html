@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f5ef">
+  <meta name="description" content="Custom mosaic art made from Rubik’s Cubes.">
+  <title>Cube by Cube — Rubik’s Cube Art</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav class="wrap nav" aria-label="Main navigation">
+      <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>cube by cube</a>
+      <div class="nav-links"><a href="#gallery">Gallery</a><a href="#pricing">Pricing</a><a class="nav-cta" href="#request">Make a request <span>↗</span></a></div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="wrap hero">
+      <div>
+        <div class="eyebrow">Art, one cube at a time</div>
+        <h1>Your idea.<br><span>My cubes.</span></h1>
+        <p class="hero-copy">I turn Rubik’s Cubes into bold, colorful mosaic art. Bring me a favorite photo or a brand-new idea, and we’ll make something one cube at a time.</p>
+        <div class="hero-actions"><a class="button" href="#request">Make a request <span>↗</span></a><a class="text-link" href="#gallery">See the gallery ↓</a></div>
+        <p class="hero-note">Hand-built with real Rubik’s Cubes · Made just for you</p>
+      </div>
+      <div class="hero-art"><div class="orb"></div><div class="hero-card"><div class="mosaic hero-mosaic" data-art="portrait" role="img" aria-label="Portrait mosaic made from Rubik’s Cubes"></div></div><div class="art-tag"><strong>Made cube by cube</strong>Colorful art, made for you</div><div class="art-sticker">made<br>to make<br>you smile</div></div>
+    </section>
+
+    <section class="gallery section" id="gallery">
+      <div class="wrap">
+        <div class="section-head"><div><div class="eyebrow">The work</div><h2>Small cubes.<br>Big picture.</h2></div><p class="section-intro">Each little square is a real Rubik’s Cube face. Together, they make one big picture.</p></div>
+        <div class="art-grid">
+          <article class="art-item"><div class="art-image"><div class="mosaic" data-art="sunset" role="img" aria-label="Sunset Rubik’s Cube mosaic example"></div></div><div class="art-caption"><strong>Golden hour</strong><span>10 × 10 cubes</span></div></article>
+          <article class="art-item"><div class="art-image"><div class="mosaic" data-art="portrait" role="img" aria-label="Portrait Rubik’s Cube mosaic example"></div></div><div class="art-caption"><strong>Color study</strong><span>10 × 10 cubes</span></div></article>
+          <article class="art-item"><div class="art-image"><div class="mosaic" data-art="flower" role="img" aria-label="Flower Rubik’s Cube mosaic example"></div></div><div class="art-caption"><strong>Bloom</strong><span>10 × 10 cubes</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing section" id="pricing">
+      <div class="wrap">
+        <div class="price-head"><div class="eyebrow">Starting prices</div><h2>Pick your picture size.</h2><p>Each cube has a 3 × 3 sticker face. Pick how many cubes you want across and down.</p></div>
+        <div class="price-grid">
+          <article class="price-card"><div class="size">THE MINI</div><div class="price">$75</div><p>10 × 10 cubes<br>30 × 30 stickers</p><a href="#request">Request 10 × 10 <span>↗</span></a></article>
+          <article class="price-card"><div class="size">THE CLASSIC</div><div class="price">$200</div><p>20 × 20 cubes<br>60 × 60 stickers</p><a href="#request">Request 20 × 20 <span>↗</span></a></article>
+          <article class="price-card featured"><div class="size">THE STATEMENT</div><div class="price">$400</div><p>30 × 30 cubes<br>90 × 90 stickers</p><a href="#request">Request 30 × 30 <span>↗</span></a></article>
+          <article class="price-card"><div class="size">THE BIG ONE</div><div class="price">$650</div><p>40 × 40 cubes<br>120 × 120 stickers</p><a href="#request">Request 40 × 40 <span>↗</span></a></article>
+          <article class="price-card"><div class="size">MAX SIZE</div><div class="price">$950</div><p>50 × 50 cubes<br>150 × 150 stickers</p><a href="#request">Request 50 × 50 <span>↗</span></a></article>
+        </div>
+        <p class="pricing-foot">Prices are starting estimates. Final price depends on the image, size, and materials.</p>
+      </div>
+    </section>
+
+    <section class="wrap section process">
+      <div class="process-copy"><div class="eyebrow">How it works</div><h2>Your photo, transformed cube by cube.</h2><p>Choose a size, preview a pixelated version of your image, and send your request.</p></div>
+      <div class="steps">
+        <article class="step"><div class="step-num">01 / SHARE</div><h3>Upload your picture</h3><p>Choose a photo you’d like to turn into mosaic art.</p></article>
+        <article class="step"><div class="step-num">02 / SIZE</div><h3>Pick your cube count</h3><p>Choose a standard size or request a custom one.</p></article>
+        <article class="step"><div class="step-num">03 / PREVIEW</div><h3>See the colors</h3><p>Your preview uses the colors of classic Rubik’s Cube stickers.</p></article>
+        <article class="step"><div class="step-num">04 / REQUEST</div><h3>Get in touch</h3><p>Share your contact details and send your request.</p></article>
+      </div>
+    </section>
+
+    <section class="request-section section" id="request">
+      <div class="wrap request-wrap">
+        <div class="request-heading"><div class="eyebrow">Let’s make something</div><h2>Make a request.</h2><p>Upload an image and choose a size to see a pixelated preview made with Rubik’s Cube colors.</p></div>
+
+        <form id="request-form" class="request-card" action="https://formspree.io/f/xbgdyzrj" method="post" enctype="multipart/form-data">
+          <input type="hidden" name="_subject" value="New Rubik’s Cube art request">
+          <div class="step-indicator"><span class="step-dot active" data-step-dot="1">1</span><span class="step-line"></span><span class="step-dot" data-step-dot="2">2</span><span class="step-label" id="step-label">Artwork details</span></div>
+
+          <section class="form-step" id="form-step-1" aria-labelledby="artwork-title">
+            <h3 id="artwork-title">Your artwork</h3>
+            <label class="field-label" for="image-upload">Upload an image</label>
+            <label class="upload-box" for="image-upload"><span class="upload-icon">＋</span><strong>Choose a photo</strong><span>JPG, PNG, GIF, or WebP</span><input id="image-upload" name="image" type="file" accept="image/*" required></label>
+            <p class="field-hint" id="file-name">Your photo is used for the preview only. It won’t be sent with your request.</p>
+
+            <div class="size-row">
+              <div class="field"><label class="field-label" for="cube-size">Cubes along the longest side</label><select id="cube-size" name="cubeSize"><option value="10">10 cubes — $75</option><option value="20">20 cubes — $200</option><option value="30">30 cubes — $400</option><option value="40">40 cubes — $650</option><option value="50">50 cubes — $950 (max)</option><option value="custom">Custom size</option></select></div>
+              <div class="field custom-size-field" id="custom-size-field" hidden><label class="field-label" for="custom-size">Custom cube count</label><input id="custom-size" name="customSize" type="number" min="1" max="50" placeholder="e.g. 15"></div>
+            </div>
+            <div class="estimate-chip" aria-live="polite"><span>Estimated starting price</span><strong id="estimated-price">$75</strong></div>
+
+            <div class="preview-box" id="preview-box" hidden>
+              <div class="preview-top"><div><strong>Pixelated preview</strong><span id="preview-dimensions">30 × 30 stickers</span></div><span class="cube-count" id="preview-cubes">10 × 10 cubes</span></div>
+              <canvas id="preview-canvas" width="300" height="300" aria-label="Pixelated image preview"></canvas>
+              <p>Colors are approximated using classic Rubik’s Cube sticker colors. Final art may look a little different.</p>
+            </div>
+
+            <label class="field-label" for="project-notes">Anything else you’d like me to know? <span class="optional">Optional</span></label>
+            <textarea id="project-notes" name="notes" rows="3" placeholder="Tell me about your idea, colors, or custom size."></textarea>
+            <p class="form-error" id="step-1-error" role="alert"></p>
+            <div class="form-actions end"><button class="button" type="button" id="next-button">Next <span>→</span></button></div>
+          </section>
+
+          <section class="form-step" id="form-step-2" aria-labelledby="contact-title" hidden>
+            <h3 id="contact-title">Your contact info</h3>
+            <p class="step-description">Add a phone number or email so I can follow up about your request.</p>
+            <div class="field"><label class="field-label" for="customer-name">Your name</label><input id="customer-name" name="customerName" autocomplete="name" required placeholder="Name"></div>
+            <div class="contact-fields">
+              <div class="field"><label class="field-label" for="customer-email">Email</label><input id="customer-email" name="email" type="email" autocomplete="email" placeholder="you@example.com"></div>
+              <div class="field"><label class="field-label" for="customer-phone">Phone number</label><input id="customer-phone" name="phone" type="tel" autocomplete="tel" placeholder="(555) 555-5555"></div>
+            </div>
+            <p class="field-hint">Please provide at least one: phone number or email.</p>
+            <div class="request-summary" id="request-summary"></div>
+            <p class="email-note">Your photo is only used for the preview. I’ll contact you using the details above to ask you to send it.</p>
+            <p class="form-error" id="step-2-error" role="alert"></p>
+            <div class="form-actions"><button class="button button-light" type="button" id="back-button">← Back</button><button class="button" type="submit">Get in touch <span>↗</span></button></div>
+          </section>
+          <div class="request-result" id="request-result" role="status" aria-live="polite" hidden></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="wrap footer-inner"><a class="footer-brand" href="#top">cube by cube</a><span>Colorful art, made one cube at a time.</span><span>© 2026 Cube by Cube</span></div></footer>
+</body>
+</html>
